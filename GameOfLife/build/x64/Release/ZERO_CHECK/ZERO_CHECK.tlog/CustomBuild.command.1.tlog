@@ -1,0 +1,10 @@
+^F:\VSCODE\NSU\OOP\GAMELIFE\MAKE\BUILD\CMAKEFILES\B98786B9C0380401D4A213A23EC3D259\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/VScode/NSU/OOP/GameLife/Make -BF:/VScode/NSU/OOP/GameLife/Make/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/VScode/NSU/OOP/GameLife/Make/build/GameOfLife.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
